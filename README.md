@@ -11,6 +11,7 @@ This is the final project of CS452000 Introduction to Image Processing at Nation
     - You will see 3 folders (`source/`, `target/`, and `result/`) and some MatLab codes
     - This program will apply color characteristics of target images to source images, and save the results.
 2. open folder in Matalb
+    - install these packages: `Fixed-Point Designer`
 3. run `main.m` and you will get the result images in `result/`
 
 ## References
