@@ -1,3 +1,4 @@
 result/*.bmp
 source/*.bmp
 target/*.bmp
+.gitignore
