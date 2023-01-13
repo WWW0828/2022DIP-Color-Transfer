@@ -8,8 +8,8 @@ function output = GlobalColorTransfer(source_img, target_img)
     lab_source = RGB2LAB(source_img);
     lab_target = RGB2LAB(target_img);
 
-    [mean_source, std_source] = GetMeanAndStandard(lab_source);
-    [mean_target, std_target] = GetMeanAndStandard(lab_target);
+    [mean_source, std_source] = GetMeanAndStandard(lab_source, false);
+    [mean_target, std_target] = GetMeanAndStandard(lab_target, false);
 
     lab_result = zeros(size(lab_source));
     for channel=1:3

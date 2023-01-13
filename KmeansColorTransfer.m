@@ -30,8 +30,8 @@ function output = KmeansColorTransfer(source, target, img_id)
     new_Lab = zeros(M, N, C, 'double');
     
     % converting RGB to a decorrelated color space 𝑙𝛼𝛽
-    Lab_source = RGB2LAB(source);
-    Lab_target = RGB2LAB(target);
+    Lab_source = rgb2lab(source);
+    Lab_target = rgb2lab(target);
     disp(' convert from RGB to Lab color space done...');
     
     % compute probability
@@ -96,7 +96,7 @@ function output = KmeansColorTransfer(source, target, img_id)
     end
     
     % converting the color back to RGB
-    output = LAB2RGB(new_Lab);
+    output = lab2rgb(new_Lab);
 
     imwrite(output, ['result/kmeans/r' num2str(img_id) '.bmp']);
     disp('K-means Color Transfer done...');

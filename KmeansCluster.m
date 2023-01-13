@@ -7,7 +7,7 @@ function output = KmeansCluster(image, k)
     [M, N, C] = size(image);
     output = zeros(M, N, 'double');
 
-    Lab = im2single(RGB2LAB(image));
+    Lab = im2single(rgb2lab(image));
 
     % superpixels
     [S,NS] = superpixels(Lab,1200);
