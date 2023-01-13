@@ -9,8 +9,7 @@ function [input_mean, input_std] = GetMeanAndStandard(input, omit)
         input_std =  [std2(input(:, :, 1)), std2(input(:, :, 2)), std2(input(:, :, 3))];
     else
         input_mean = [mean(input(:, :, 1), 'all', 'omitnan'), mean(input(:, :, 2), 'all', 'omitnan'), mean(input(:, :, 3), 'all', 'omitnan')];
-        input_std =  [std(input(:, :, 1), 0, 'all', 'omitnan'), std(input(:, :, 2), 0, 'all', 'omitnan'), std(input(:, :, 3), 0, 'all', 'omitnan')];
-        disp(input_mean);
-        disp(input_std);
+        input_std =  [std2(input(:, :, 1)), std2(input(:, :, 2)), std2(input(:, :, 3))];
     end
+    mean2()
 end
