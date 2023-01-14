@@ -1,7 +1,7 @@
 function LAB = RGB2LAB(input)
-    %RGB2LAB: Convert RGB to CIE 1976 L*a*b*
+    % RGB2LAB: Convert RGB to CIE 1976 L*a*b*
     %   input: A rgb representation of an image wiht size: (M, N, 3, "uint8")
-    %   LAB: A lab representation of an image with size: (M, N, 3, "uint8")
+    %     LAB: A lab representation of an image with size: (M, N, 3, "uint8")
 
     R = double(input(:, :, 1));
     G = double(input(:, :, 2));

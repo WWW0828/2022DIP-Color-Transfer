@@ -1,10 +1,11 @@
-function output = GlobalColorTransfer(source_img, target_img)
-    %GlobalColorTransfer: transfer one image
+function output = GlobalColorTransfer(source_img, target_img, img_id)
+    % GlobalColorTransfer: transfer one image
     %   source_img: rgb source image
     %   target_img: rgb target image
-    %   save: save output image or not
-    %   output: rgb result image
-
+    %         save: save output image or not
+    %       output: rgb result image
+    
+    disp('Global Color Transfering...');
     lab_source = RGB2LAB(source_img);
     lab_target = RGB2LAB(target_img);
 
@@ -20,6 +21,5 @@ function output = GlobalColorTransfer(source_img, target_img)
     lab_result(lab_result > 255) = 255;
     
     output = LAB2RGB(lab_result);
-    imwrite(output, ['result/global/r' num2str(img_id) '.bmp']);
-    disp('Global Color Transfer done...');
+    imwrite(output, ['newresult/global/r' num2str(img_id) '.bmp']);
 end
