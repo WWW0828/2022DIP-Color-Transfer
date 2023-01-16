@@ -78,5 +78,5 @@ function output = LocalColorTransfer(source, target, img_id, k, superpixel)
     % converting the color back to RGB
     output = lab2rgb(new_Lab);
     disp(' Lab -> RGB done, saving result...');
-    imwrite(output, ['result/current_execute/r' num2str(img_id) '_k0' num2str(k) '.bmp']);
+    imwrite(output, ['result/local/r' num2str(img_id)  num2str(k) '.bmp']);
 end

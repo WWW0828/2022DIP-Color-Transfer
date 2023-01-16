@@ -21,5 +21,5 @@ function output = GlobalColorTransfer(source_img, target_img, img_id)
     lab_result(lab_result > 255) = 255;
     
     output = LAB2RGB(lab_result);
-    imwrite(output, ['newresult/global/r' num2str(img_id) '.bmp']);
+    imwrite(output, ['result/global/r' num2str(img_id) '.bmp']);
 end
