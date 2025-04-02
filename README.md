@@ -1,9 +1,9 @@
 # 2022DIP-Color-Transfer
 **Collaborators:** 
-108000219 翁玉芯、108000233 賴郁婷
+Y.-H. Weng, Y.-T. Lai
 
 ## Introduction
-This is the final project of CS452000 Introduction to Image Processing at National Tsing Hua University. In this project, we are going to reshow the results of a previous research, ***Color Transfer between Images*** done by Erik Reinhard, Michael Ashikhmin, Bruce Gooch,and Peter Shirley.
+This is the final project of CS452000 Introduction to Image Processing at National Tsing Hua University. In this project, we are going to implement previous work, ***Color Transfer between Images*** done by Erik Reinhard, Michael Ashikhmin, Bruce Gooch,and Peter Shirley.
 
 ## Run the program
 1. clone this repository: 
