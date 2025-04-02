@@ -4,6 +4,8 @@ Y.-H. Weng, Y.-T. Lai
 
 ## Introduction
 This is the final project of CS452000 Introduction to Image Processing at National Tsing Hua University. In this project, we are going to implement previous work, ***Color Transfer between Images*** done by Erik Reinhard, Michael Ashikhmin, Bruce Gooch,and Peter Shirley.
+### Quick Demos
+![demo1](https://github.com/user-attachments/assets/ad0a2422-4564-44cd-9bd5-bfbba4b47d88)
 
 ## Run the program
 1. clone this repository: 
